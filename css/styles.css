@@ -1,0 +1,35 @@
+/***********
+ONLY DESKTOP DESIGN
+************/
+
+header{
+  padding: 25px;
+  display: block;
+
+}
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+.gallery {
+  max-width: 100%;
+}
+
+img{
+  width: 20%;
+  padding: 3% 2%;
+}
+
+img.lb-image{
+  padding: 0;
+}
+
+
+/*.lb-container {
+  max-width: 500px;
+  max-height: 400px;
+}*/
