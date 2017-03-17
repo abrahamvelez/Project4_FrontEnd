@@ -10,16 +10,16 @@ $(document).ready(function(){
 
     //Store the input value
     $("#search").keyup(function(){
-      var content = $(this).val(), count = 0;
+      var content = $(this).val().toLowerCase(), count = 0;
       // console.log(content);
 
 
     //Loop through the images
-    $("img").each(function(){
-      console.log($(this).attr('title'));
+    $("a").each(function(){
+      console.log($(this).attr('data-title'));
         //Fade out results if search does not match pic title
-        if($(this).attr('title')){
-          if ($(this).attr('title').search(new RegExp(content, "i")) < 0){
+        if($(this).attr('data-title')){
+          if ($(this).attr('data-title').search(new RegExp(content, "i")) < 0){
               $(this).fadeOut();
             }else{
               $(this).show();
